@@ -3,8 +3,8 @@
 const BlogDes = ({blog}) => {
     const {cover,title,author_img,author,posted_date,reading_time,hashtags} = blog;
     return (
-        <div>
-            <img src={cover} alt="" />
+        <div className="mb-20 space-y-3">
+            <img className="mt-5" src={cover} alt="" />
             <div className="flex justify-between">
                 <div className="flex ">
                     <img className="w-14" src={author_img} alt="" />
@@ -15,7 +15,7 @@ const BlogDes = ({blog}) => {
                 </div>
                 <div>
                     <h2>{reading_time}</h2>
-                    <button>bookmark</button>
+                    <button className="button">bookmark</button>
                 </div>
             </div>
            <h2>{title}</h2>
